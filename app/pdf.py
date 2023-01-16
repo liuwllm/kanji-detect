@@ -4,8 +4,11 @@ from tika import parser
 
 from kanji import *
 
-parsed = parser.from_file('./app/test.pdf')
+testLocation = "./app/test.pdf"
 
-parsed['content'] = parsed['content'].strip().replace('\n', '')
+def pdfExtract(fileLocation):
+    parsed = parser.from_file(fileLocation)
 
-pdfIsolatedKanji = findKanji(parsed['content'])
+    parsed['content'] = parsed['content'].strip().replace('\n', '')
+    
+    return(findKanji(parsed['content']))

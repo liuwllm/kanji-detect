@@ -49,17 +49,5 @@ def jishoLookup(isolatedKanji):
             Kanji.request(sortedKanji).data.main_readings.on, 
             Kanji.request(sortedKanji).data.radical.parts
         ])
-        '''
-        kanjiArray.append(kanjiInfo(
-            Kanji.request(sortedKanji).data.kanji, 
-            Kanji.request(sortedKanji).data.strokes, 
-            Kanji.request(sortedKanji).data.main_meanings, 
-            Kanji.request(sortedKanji).data.main_readings.kun, 
-            Kanji.request(sortedKanji).data.main_readings.on, 
-            Kanji.request(sortedKanji).data.radical.parts
-        ))
-        '''
-        
+    
     return kanjiArray
-
-print(jishoLookup(pdfIsolatedKanji))
