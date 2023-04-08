@@ -4,8 +4,6 @@ from tika import parser
 
 from kanji import *
 
-testLocation = "./app/test.pdf"
-
 def pdfExtract(fileLocation):
     parsed = parser.from_file(fileLocation)
 

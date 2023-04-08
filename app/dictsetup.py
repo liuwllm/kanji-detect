@@ -1,4 +1,4 @@
-from pdf import *
+from app.textreader import *
 
 def convert(isolatedKanji):
     frequency = {}

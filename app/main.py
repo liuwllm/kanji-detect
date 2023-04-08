@@ -1,6 +1,7 @@
 from jisho import *
 import csv
 
+testLocation = "./app/test.pdf"
 outputFile = "test.csv"
 
 def csvWrite(fileLocation, outputFile):
