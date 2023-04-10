@@ -1,4 +1,4 @@
-from jisho import *
+from app.kanji import *
 import csv
 
 testLocation = "./app/test.pdf"

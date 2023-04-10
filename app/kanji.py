@@ -1,5 +1,4 @@
 from dictsetup import *
-from pdf import *
 from jisho_api.kanji import Kanji
 
 class kanjiInfo:
